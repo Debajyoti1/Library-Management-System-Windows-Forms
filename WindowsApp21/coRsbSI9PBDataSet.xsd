@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="coRsbSI9PBDataSet" targetNamespace="http://tempuri.org/coRsbSI9PBDataSet.xsd" xmlns:mstns="http://tempuri.org/coRsbSI9PBDataSet.xsd" xmlns="http://tempuri.org/coRsbSI9PBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="coRsbSI9PBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="coRsbSI9PBConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsApp21.My.MySettings.GlobalReference.Default.coRsbSI9PBConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="adminTableAdapter" GeneratorDataComponentClassName="adminTableAdapter" Name="admin" UserDataComponentName="adminTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coRsbSI9PBConnectionString (MySettings)" DbObjectName="coRsbSI9PB.admin" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Email, Name, Password, Roll FROM admin</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="bookTableAdapter" GeneratorDataComponentClassName="bookTableAdapter" Name="book" UserDataComponentName="bookTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="coRsbSI9PBConnectionString (MySettings)" DbObjectName="coRsbSI9PB.book" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, name, author, publishdate FROM book</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="coRsbSI9PBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="coRsbSI9PBDataSet" msprop:Generator_UserDSName="coRsbSI9PBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="admin" msprop:Generator_TableClassName="adminDataTable" msprop:Generator_TableVarName="tableadmin" msprop:Generator_TablePropName="admin" msprop:Generator_RowDeletingName="adminRowDeleting" msprop:Generator_RowChangingName="adminRowChanging" msprop:Generator_RowEvHandlerName="adminRowChangeEventHandler" msprop:Generator_RowDeletedName="adminRowDeleted" msprop:Generator_UserTableName="admin" msprop:Generator_RowChangedName="adminRowChanged" msprop:Generator_RowEvArgName="adminRowChangeEvent" msprop:Generator_RowClassName="adminRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book" msprop:Generator_TableClassName="bookDataTable" msprop:Generator_TableVarName="tablebook" msprop:Generator_TablePropName="book" msprop:Generator_RowDeletingName="bookRowDeleting" msprop:Generator_RowChangingName="bookRowChanging" msprop:Generator_RowEvHandlerName="bookRowChangeEventHandler" msprop:Generator_RowDeletedName="bookRowDeleted" msprop:Generator_UserTableName="book" msprop:Generator_RowChangedName="bookRowChanged" msprop:Generator_RowEvArgName="bookRowChangeEvent" msprop:Generator_RowClassName="bookRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="user">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
